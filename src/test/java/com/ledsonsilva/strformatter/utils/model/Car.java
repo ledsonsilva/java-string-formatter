@@ -1,13 +1,14 @@
 package com.ledsonsilva.strformatter.utils.model;
 
 import com.ledsonsilva.strformatter.annotation.PositionalFormatter;
+import com.ledsonsilva.strformatter.enums.PaddingDirectionEnum;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Car {
 
-    @PositionalFormatter(size = 3)
+    @PositionalFormatter(size = 3, padding = '0', paddingDirection = PaddingDirectionEnum.LEFT)
     private Long id;
 
     @PositionalFormatter(size = 10)

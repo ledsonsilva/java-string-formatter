@@ -27,7 +27,7 @@ public class StringPositionalFormatterTest {
     @Test
     void checkIfStringWasFormattedCorrectly() {
         Car argo = getMockObject();
-        String test = "1  FIAT      ARGO 2.0            " + now.format(DateTimeFormatter.ofPattern("dd/MM/YYYY")) + "     150.00";
+        String test = "001FIAT      ARGO 2.0            " + now.format(DateTimeFormatter.ofPattern("dd/MM/YYYY")) + "     150.00";
 
         try {
             Assertions.assertEquals(test, StringPositionalFormatter.format(argo));
